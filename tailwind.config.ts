@@ -10,6 +10,7 @@ export default {
         background: 'var(--background)',
         border: 'var(--border)',
         glass: 'var(--glass)',
+        'glass-active': 'var(--glass-active)',
         'gradient-end': 'var(--gradient-end)',
       },
     },

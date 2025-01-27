@@ -8,6 +8,7 @@
   --background: #FBFBFB;
   --border: #9A9A9A;
   --glass: rgba(34, 34, 34, 0.06);
+  --glass-active: rgba(34, 34, 34, 0.1);
   --gradient-end: rgba(19, 19, 19, 0.3);
 }
 
@@ -23,6 +24,20 @@ body {
     --background: #121212;
     --border: #323232;
     --glass: rgba(255, 255, 255, 0.06);
+    --glass-active: rgba(255, 255, 255, 0.1);
     --gradient-end: rgba(255, 255, 255, 0.2);
   }
+}
+
+/* COMPONENTS */
+.menu-btn{
+  @apply mr-5 bg-glass border-glass border-[1px] w-12 h-12 grid place-items-center rounded-2xl backdrop-blur-3xl hover:bg-glass-active transition-all active:scale-95 place-self-end;
+}
+
+.navbar{
+  @apply absolute md:static mt-2 mr-5 md:mr-0 right-0 flex flex-col md:flex-row gap-10 md:gap-[100px] bg-glass border-glass border-[1px] px-10 py-5 items-center rounded-2xl backdrop-blur-3xl opacity-0 invisible md:visible md:opacity-100 transition-all;
+}
+
+.navbar.active{
+  @apply flex md:flex-row opacity-100 visible;
 }
