@@ -8,6 +8,7 @@ export default {
         text: 'var(--text)',
         'text-gray': 'var(--text-gray)',
         background: 'var(--background)',
+        border: 'var(--border)',
         glass: 'var(--glass)',
         'gradient-end': 'var(--gradient-end)',
       },

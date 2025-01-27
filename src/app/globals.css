@@ -3,9 +3,26 @@
 @tailwind utilities;
 
 :root{
-  --text: #FFFFFF;
-  --text-gray: #777777;
-  --background: #121212;
-  --glass: rgba(255, 255, 255, 0.06);
-  --gradient-end: rgba(255, 255, 255, 0.2);
+  --text: #131313;
+  --text-gray: #454545;
+  --background: #FBFBFB;
+  --border: #9A9A9A;
+  --glass: rgba(34, 34, 34, 0.06);
+  --gradient-end: rgba(19, 19, 19, 0.3);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --text: #FFFFFF;
+    --text-gray: #777777;
+    --background: #121212;
+    --border: #323232;
+    --glass: rgba(255, 255, 255, 0.06);
+    --gradient-end: rgba(255, 255, 255, 0.2);
+  }
 }
