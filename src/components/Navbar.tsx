@@ -1,4 +1,4 @@
-
+'use client';
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -27,8 +27,8 @@ export const Navbar = () => {
                     <ul className="flex gap-5 items-center">
                         <li className='flex items-center'><FontAwesomeIcon icon={faGithub} className='text-2xl text-text hover:text-text-gray transition-colors cursor-pointer'/></li>
                         <li className='flex items-center'><FontAwesomeIcon icon={faLinkedin} className='text-2xl text-text hover:text-text-gray transition-colors cursor-pointer'/></li>
-                        <li className="text-glass select-none">|</li>
-                        <li><Image src={brasilFlag} alt='Flag' className='max-w-none'/></li>
+                        <li className="text-text opacity-25 select-none">|</li>
+                        <li className='cursor-pointer'><Image src={brasilFlag} alt='Flag' className='max-w-none'/></li>
                     </ul>
                 </nav>
             </div>
