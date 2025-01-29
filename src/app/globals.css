@@ -29,6 +29,17 @@ body {
   }
 }
 
+/* ANIMATION */
+
+@layer utilities{
+  .animation-delay-1000{
+    animation-delay: 1000ms;
+  }
+  .animation-delay-2000{
+    animation-delay: 2000ms;
+  }
+}
+
 /* COMPONENTS */
 .menu-btn{
   @apply mr-2 bg-glass border-glass border-[1px] w-12 h-12 grid place-items-center rounded-2xl backdrop-blur-3xl hover:bg-glass-active transition-all active:scale-95 place-self-end;

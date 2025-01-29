@@ -25,10 +25,10 @@ export const Navbar = () => {
                         <li><a href="#" className="hover:text-text-gray transition-colors cursor-pointer">Contato</a></li>
                     </ul>
                     <ul className="flex gap-5 items-center">
-                        <li className='flex items-center'><FontAwesomeIcon icon={faGithub} className='text-2xl text-text hover:text-text-gray transition-colors cursor-pointer'/></li>
-                        <li className='flex items-center'><FontAwesomeIcon icon={faLinkedin} className='text-2xl text-text hover:text-text-gray transition-colors cursor-pointer'/></li>
+                        <li className='flex items-center'><a href="https://github.com/edvxndxvi" target='_blank'><FontAwesomeIcon icon={faGithub} className='text-2xl text-text hover:text-text-gray transition-colors cursor-pointer'/></a></li>
+                        <li className='flex items-center'><a href="https://www.linkedin.com/in/edvan-davi-119970236/" target='_blank'><FontAwesomeIcon icon={faLinkedin} className='text-2xl text-text hover:text-text-gray transition-colors cursor-pointer'/></a></li>
                         <li className="text-text opacity-25 select-none">|</li>
-                        <li className='cursor-pointer'><Image src={brasilFlag} alt='Flag' className='max-w-none'/></li>
+                        <li className='cursor-pointer hover:saturate-0 transition-all'><Image src={brasilFlag} alt='Flag' className='max-w-none'/></li>
                     </ul>
                 </nav>
             </div>
