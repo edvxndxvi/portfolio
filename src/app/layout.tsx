@@ -20,6 +20,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
   return (
     <html lang="pt-br">
       <body
+        cz-shortcut-listen="true"
         className={`${montserrat.className} antialiased`}
       >
         {children}

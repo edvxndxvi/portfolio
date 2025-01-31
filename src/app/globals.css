@@ -29,8 +29,21 @@ body {
   }
 }
 
-/* ANIMATION */
+/* SCROLL CONFIG */
+html{
+  scroll-behavior: smooth;
+}
 
+::-webkit-scrollbar{
+  width: 0.9vw;
+  background: var(--glass);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--glass-active);
+  border-radius: 6px;
+}
+
+/* ANIMATION */
 @layer utilities{
   .animation-delay-1000{
     animation-delay: 1000ms;
@@ -51,4 +64,19 @@ body {
 
 .navbar.active{
   @apply flex md:flex-row opacity-100 visible;
+}
+
+.navbar-icon{
+  @apply text-2xl text-text hover:text-text-gray transition-colors cursor-pointer;
+}
+
+.btn{
+  @apply px-8 py-4 bg-glass border-glass border-[1px] text-text w-fit place-self-center rounded-2xl hover:bg-glass-active transition-all;
+}
+.spotlight{
+  @apply absolute w-1/6 min-[600px]:w-28 min-[600px]:h-[600px] rounded-full rotate-[25deg] filter blur-2xl sm:blur-3xl -z-50;
+}
+
+.project-btn{
+  @apply flex gap-2 items-center px-4 py-2 bg-glass hover:bg-glass-active border-[1px] border-glass rounded-full transition-all w-fit;
 }
