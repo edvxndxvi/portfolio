@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
 const montserrat = Montserrat({
-  weight: ["400", "500", "700"], 
+  weight: ["400", "500", "600"], 
   subsets: ["latin"],
 });
 

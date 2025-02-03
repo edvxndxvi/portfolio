@@ -38,8 +38,8 @@ export const Projects = () => {
                         </ul>
 
                         <div className='flex flex-row flex-wrap gap-5 '>
-                            <a href={project.links[0]} className='project-btn' target='_blank'><FontAwesomeIcon icon={faGithub} className='text-xl text-text'/>Ver Projeto</a>
-                            <a href={project.links[1]} className='project-btn' target='_blank'><FontAwesomeIcon icon={faDisplay} className='text-lg text-text'/>Ver Código</a>
+                            <a href={project.links[0]} className='project-btn' target='_blank'><FontAwesomeIcon icon={faGithub} className='text-xl text-text'/>Github</a>
+                            <a href={project.links[1]} className='project-btn' target='_blank'><FontAwesomeIcon icon={faDisplay} className='text-lg text-text'/>Deploy</a>
                         </div>
                     </div>
                 </li>
