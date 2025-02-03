@@ -7,17 +7,17 @@ import gigroup from '../../public/images/gigroup.jpg';
 
 export const Experiences = () => {
     const experiences = [
-        {id: 1, role: 'Dev. Front End - Blueshift', time: 'Setembro 2024 - Atual', companyLogo: blueshift},
-        {id: 2, role: 'Dev. Front End - Bradesco (Terceirizado)', time: 'Setembro 2024 - Atual', companyLogo: bradesco},
-        {id: 3, role: 'Aprendiz TI - Help Desk - Gi Group Holding', time: 'Jun 2023 - Setembro 2024', companyLogo: gigroup},
+        {id: 1, role: 'Dev. Front End - Blueshift', time: 'Setembro 2024 - Atual', companyLogo: blueshift, companyName: 'Blueshift'},
+        {id: 2, role: 'Dev. Front End - Bradesco (Terceirizado)', time: 'Setembro 2024 - Atual', companyLogo: bradesco, companyName: 'Bradesco'},
+        {id: 3, role: 'Aprendiz TI - Help Desk - Gi Group Holding', time: 'Jun 2023 - Setembro 2024', companyLogo: gigroup, companyName: 'GiGroup'},
     ];
       
     return (
        <ul>
             {experiences.map((experience) => (
-            <li key={experience.id} className="flex items-center gap-2 py-5 border-border border-y-[1px] first:border-none last:border-none group">
-                <div className="w-11 h-11 rounded-sm">
-                    <Image src={experience.companyLogo} alt="JavaScript"/>
+            <li key={experience.id} className="professional-item group">
+                <div className="w-11 h-11">
+                    <Image src={experience.companyLogo} alt={experience.companyName} className='rounded-md'/>
                 </div>
                 <div>
                     <p className="font-medium text-lg text-text">{experience.role}</p>

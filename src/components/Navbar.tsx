@@ -21,7 +21,7 @@ export const Navbar = () => {
                     <ul className="flex flex-col md:flex-row gap-10 items-center">
                         <li><a href="#projects" className="hover:text-text-gray transition-colors cursor-pointer">Projetos</a></li>
                         <li><a href="#about" className="hover:text-text-gray transition-colors cursor-pointer">Sobre</a></li>
-                        <li><a href="#" className="hover:text-text-gray transition-colors cursor-pointer">Contato</a></li>
+                        <li><a href="#contact" className="hover:text-text-gray transition-colors cursor-pointer">Contato</a></li>
                     </ul>
                     <ul className="flex gap-5 items-center">
                         <li className='flex items-center'><a href="https://github.com/edvxndxvi" target='_blank'><FontAwesomeIcon icon={faGithub} className='navbar-icon'/></a></li>

@@ -16,7 +16,7 @@ export const Projects = () => {
     ];
 
     return (
-        <ul className='grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(360px,1fr))]  gap-10'>
+        <ul className='grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(360px,1fr))] gap-10'>
             {projects.map((project) => (
                 <li key={project.id} className='group border-[1px] hover:border-2 border-border hover:border-text-gray rounded-2xl w-full transition-all'>
                     <div className="overflow-hidden rounded-t-2xl">
@@ -37,7 +37,7 @@ export const Projects = () => {
                             ))}
                         </ul>
 
-                        <div className='flex flex-row flex-wrap gap-5 '>
+                        <div className='flex flex-row flex-wrap gap-5'>
                             <a href={project.links[0]} className='project-btn' target='_blank'><FontAwesomeIcon icon={faGithub} className='text-xl text-text'/>Github</a>
                             <a href={project.links[1]} className='project-btn' target='_blank'><FontAwesomeIcon icon={faDisplay} className='text-lg text-text'/>Deploy</a>
                         </div>

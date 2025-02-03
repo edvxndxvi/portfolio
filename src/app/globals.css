@@ -77,7 +77,14 @@ html{
   @apply absolute w-1/6 min-[600px]:w-28 min-[600px]:h-[600px] rounded-full rotate-[25deg] filter blur-2xl sm:blur-3xl -z-50 select-none;
 }
 
+.spotlight-bottom{
+  @apply absolute w-1/6 min-[600px]:w-28 min-[600px]:h-[560px] rounded-full -rotate-[25deg] filter blur-2xl sm:blur-3xl -z-50 select-none;
+}
+
 .project-btn{
   @apply flex gap-2 items-center px-4 py-2 bg-glass hover:bg-glass-active border-[1px] border-glass rounded-full transition-all w-fit;
 }
 
+.professional-item{
+  @apply flex items-center gap-2 py-5 border-border border-y-[1px] first:border-none last:border-none;
+}
