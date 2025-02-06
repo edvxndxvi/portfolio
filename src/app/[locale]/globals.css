@@ -4,7 +4,7 @@
 
 :root{
   --text: #131313;
-  --text-gray: #454545;
+  --text-gray: #636363;
   --background: #FBFBFB;
   --border: #9A9A9A;
   --glass: rgba(34, 34, 34, 0.06);
@@ -20,7 +20,7 @@ body {
 @media (prefers-color-scheme: dark) {
   :root{
     --text: #FFFFFF;
-    --text-gray: #777777;
+    --text-gray: #999999;
     --background: #121212;
     --border: #323232;
     --glass: rgba(255, 255, 255, 0.06);
@@ -86,5 +86,5 @@ html{
 }
 
 .professional-item{
-  @apply flex items-center gap-2 py-5 border-border border-y-[1px] first:border-none last:border-none;
+  @apply flex flex-col min-[500px]:flex-row text-center min-[500px]:text-left items-center gap-2 py-5 border-glass-active border-y-[1px] first:border-none last:border-none;
 }

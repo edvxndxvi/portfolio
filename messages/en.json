@@ -1,0 +1,56 @@
+{
+    "Nav": {
+        "projects": "Projects",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "Home": {
+        "role": "Front-End Developer",
+        "experienceWith": "Experience with",
+        "latestProjects": ["My Latest", " Projects"],
+        "aboutTitle": ["I am a ", "Web Developer ", "passionate about "],
+        "aboutText": "With years of experience, I design intuitive and customized web interfaces. Constantly exploring new technologies and trends, I ensure my projects are always up-to-date and aligned with users' needs.",
+        "yearsExperience": "Years of experience",
+        "developedProjects": "Developed Projects",
+        "experiencesTitle": "Experiences",
+        "formationsAndMerits": "Education & Achievements",
+        "contactTitle": "Ready to discuss your next project?",
+        "contactText": "Interested in discussing an opportunity to create something amazing? I'm available.",
+        "copyRight": "© 2025 Edvan Davi. All Rights Reserved."
+    },
+    "Projects": {
+        "tapdano": "As part of the Blueshift team, I was assigned to code the TapDano website based on an already created design.",
+        "wattwise": "Energy Dashboard, a project created for Global Solution at FIAP, in the second semester of the first year.",
+        "bikehub": "Fictional eCommerce of a bicycle shop. Its initial concept was based on the prospecting of a real client."
+    },
+    "Experiences": {
+        "blueshift": {
+            "role": "Front End Developer - Blueshift",
+            "period": "September 2024 - Present"
+        },
+        "bradesco": {
+            "role": "Front End Developer - Bradesco (Outsourced)",
+            "period": "September 2024 - Present"
+        },
+        "gigroup": {
+            "role": "IT Apprentice - Help Desk - Gi Group Holding",
+            "period": "June 2023 - September 2024"
+        }
+    },
+    "Educations": {
+        "meritScholarship": {
+            "title": "1st Place Merit Scholarship - FIAP"
+        },
+        "fiap": {
+            "course": "Systems Analysis and Development - FIAP"
+        },
+        "senac": {
+            "course": "Technical in Computer Science for the Internet - SENAC"
+        }
+    },
+    "Contact": {
+        "subject": "Let's have a chat!",
+        "body": "Hi, Edvan! I saw your portfolio and have a few ideas in mind. If you have some time, let's chat?",
+        "button": "Get in Touch"
+    }
+}

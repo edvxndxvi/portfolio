@@ -1,0 +1,56 @@
+{
+    "Nav": {
+        "projects": "Projetos",
+        "about": "Sobre",
+        "contact": "Contato"
+    },
+    "Home": {
+        "role": "Desenvolvedor Front-End",
+        "experienceWith": "Experiência com",
+        "latestProjects": ["Meus Últimos", "Projetos"],
+        "aboutTitle": ["Sou um ", "Desenvolvedor Web ", "apaixonado por "],
+        "aboutText": "Com anos de experiência, crio interfaces intuitivas e personalizadas para web. Buscando constantemente novas tecnologias e tendências, garantindo que meus projetos estejam sempre atualizados e alinhados com as necessidades dos usuários.",
+        "yearsExperience": "Anos de experiência",
+        "developedProjects": "Projetos desenvolvidos",
+        "experiencesTitle": "Experiências",
+        "formationsAndMerits": "Formações e Méritos",
+        "contactTitle": "Pronto para conversar sobre o seu próximo projeto?",
+        "contactText": "Deseja discutir uma oportunidade para criar algo incrível? Estou à disposição.",
+        "copyRight": "© 2025 Edvan Davi. Todos os Direitos Reservados."
+    },
+    "Projects": {
+        "tapdano": "Como parte da equipe da Blueshift, fui designado a codar o site da TapDano a partir de um design ja criado.",
+        "wattwise": "Dashboard de energia, projeto criado para a Global Solution da FIAP, no segundo semetres do primeiro ano.",
+        "bikehub": "Ecommerce fictício de uma loja de bicicletas. Sua ideia inicial se baseava na prospecção de um cliente real."
+    },
+    "Experiences": {
+        "blueshift": {
+            "role": "Dev. Front End - Blueshift",
+            "period": "Setembro 2024 - Atual"
+        },
+        "bradesco": {
+            "role": "Dev. Front End - Bradesco (Terceirizado)",
+            "period": "Setembro 2024 - Atual"
+        },
+        "gigroup": {
+            "role": "Aprendiz TI - Help Desk - Gi Group Holding",
+            "period": "Junho 2023 - Setembro 2024"
+        }
+    },
+    "Educations": {
+        "meritScholarship": {
+            "title": "1º Lugar Bolsa Mérito - FIAP"
+        },
+        "fiap": {
+            "course": "Análise e Desenvolvimento de Sistemas - FIAP"
+        },
+        "senac": {
+            "course": "Técnico em Informática para Internet - SENAC"
+        }
+    },
+    "Contact": {
+        "subject": "Bora trocar uma ideia?",
+        "body": "Oi, Edvan! Vi seu portfólio e fiquei com algumas ideias na cabeça. Se tiver um tempinho, bora conversar?",
+        "button": "Entrar em contato"
+    }
+}

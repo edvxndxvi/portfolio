@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDisplay } from '@fortawesome/free-solid-svg-icons';
@@ -9,10 +11,12 @@ import bikehub from '../../public/images/bikehub.jpg';
 
 
 export const Projects = () => {
+    const t = useTranslations('Projects');
+
     const projects = [
-        {id: 1, image: tapdano, name: 'TapDano', desc: 'Como parte da equipe da Blueshift, fui designado a codar o site da TapDano a partir de um design ja criado.', tecnologys: ['React', 'TypeScript'], links: ['https://github.com/tapdano/tapdano/','https://tapdano.com/']},
-        {id: 2, image: wattwise, name: 'WattWise', desc: 'Dashboard de energia, projeto criado para a Global Solution da FIAP, no segundo semetres do primeiro ano.', tecnologys: ['NextJs', 'TypeScript', 'Tailwind CSS'], links: ['https://github.com/edvxndxvi/wattwise','https://wattwise-delta.vercel.app/visaoGeral']},
-        {id: 3, image: bikehub, name: 'BikeHub', desc: 'Ecommerce fictício de uma loja de bicicletas. Sua ideia inicial se baseava na prospecção de um cliente real.', tecnologys: ['HTML', 'CSS', 'JavaScript'], links: ['https://github.com/edvxndxvi/bikehub','https://edvxndxvi.github.io/bikehub/']},
+        {id: 1, image: tapdano, name: 'TapDano', desc: t('tapdano') , tecnologys: ['React', 'TypeScript'], links: ['https://github.com/tapdano/tapdano/','https://tapdano.com/']},
+        {id: 2, image: wattwise, name: 'WattWise', desc:t('wattwise'), tecnologys: ['NextJs', 'TypeScript', 'Tailwind CSS'], links: ['https://github.com/edvxndxvi/wattwise','https://wattwise-delta.vercel.app/visaoGeral']},
+        {id: 3, image: bikehub, name: 'BikeHub', desc: t('bikehub'), tecnologys: ['HTML', 'CSS', 'JavaScript'], links: ['https://github.com/edvxndxvi/bikehub','https://edvxndxvi.github.io/bikehub/']},
     ];
 
     return (
