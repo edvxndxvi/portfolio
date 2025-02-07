@@ -11,6 +11,7 @@ import { Tecnology } from "@/components/Tecnology";
 
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { DownloadCVButton } from "@/components/DownloadCVButton";
 
 export default function Home() {
 
@@ -50,7 +51,7 @@ export default function Home() {
             <div className="grid gap-4">
               <h1 className="text-6xl min-[600px]:text-8xl font-bold">Edvan Davi</h1>
               <p className="text-3xl min-[600px]:text-4xl font-medium">{t('role')}</p>
-              <button className="btn">Download CV</button>
+              <DownloadCVButton/>
             </div>
 
             <div className="grid gap-7">
