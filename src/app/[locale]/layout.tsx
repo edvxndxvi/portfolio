@@ -13,7 +13,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
 const montserrat = Montserrat({
-  weight: ["400", "500", "600"], 
+  weight: ["400", "500",  "600"], 
   subsets: ["latin"],
 });
 
@@ -22,7 +22,13 @@ export const metadata: Metadata = {
   description: "Sou um desenvolvedor Web apaixonado por UX/UI Design.",
 };
 
-export default async function RootLayout({children, params: { locale }}: Readonly<{children: React.ReactNode; params: {locale: string};}>) {
+type LayoutProps = {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+};
+
+const Layout: React.FC<LayoutProps> = async ({ children, params }) => {
+  const { locale } = await params;
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   if (!routing.locales.includes(locale as any)) {
@@ -45,3 +51,5 @@ export default async function RootLayout({children, params: { locale }}: Readonl
     </html>
   );
 }
+
+export default Layout;
