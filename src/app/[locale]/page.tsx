@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <>
       <Navbar/>
-      <main className="max-w-[1440px] mx-auto">
+      <main className="max-w-[1440px] mx-auto overflow-hidden lg:overflow-visible">
         <section className="px-4 max-w-[1440px] relative mx-auto overflow-hidden lg:overflow-visible">
           
           {/* Spotlight Effect Elements */}
