@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { motion } from "motion/react"
 
 import blueshift from '../../public/images/blueshift.jpg';
 import bradesco from '../../public/images/bradesco.jpg';
@@ -18,7 +19,12 @@ export const Experiences = () => {
     return (
        <ul>
             {experiences.map((experience) => (
-            <li key={experience.id} className="professional-item group">
+            <motion.li 
+                key={experience.id} className="professional-item group"
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+            >
                 <div>
                     <Image src={experience.companyLogo} alt={experience.companyName} className='rounded-[4px] min-w-11 max-w-11'/>
                 </div>
@@ -26,7 +32,7 @@ export const Experiences = () => {
                     <p className="font-medium text-lg text-text">{experience.role}</p>
                     <p className="text-sm text-text-gray">{experience.period}</p>
                 </div>
-            </li>
+            </motion.li>
             ))}
        </ul>
     )

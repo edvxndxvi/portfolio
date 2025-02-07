@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { motion } from "motion/react"
 
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -22,7 +23,13 @@ export const Projects = () => {
     return (
         <ul className='grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(360px,1fr))] gap-10'>
             {projects.map((project) => (
-                <li key={project.id} className='group border-[1px] hover:border-2 border-border hover:border-text-gray rounded-2xl w-full transition-all'>
+                <motion.li 
+                    key={project.id} 
+                    className='group border-[1px] hover:border-2 border-border hover:border-text-gray rounded-2xl w-full transition-all'
+                    initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.4 }}
+                >
                     <div className="overflow-hidden rounded-t-2xl">
                         <Image 
                             src={project.image} 
@@ -46,7 +53,7 @@ export const Projects = () => {
                             <a href={project.links[1]} className='project-btn' target='_blank'><FontAwesomeIcon icon={faDisplay} className='text-lg text-text'/>Deploy</a>
                         </div>
                     </div>
-                </li>
+                </motion.li>
             ))}
         </ul>
     )

@@ -1,4 +1,5 @@
 import {useTranslations} from 'next-intl';
+import { motion } from "motion/react"
 
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons/faArrowRight"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -10,7 +11,13 @@ export const ContactButton = () => {
     const body = t('body');
 
     return (
-        <a href={`mailto:edvandavi1@hotmail.com?subject=${subject}?body=${body}`} className="btn pr-4 relative group overflow-hidden">
+        <motion.a 
+            href={`mailto:edvandavi1@hotmail.com?subject=${subject}?body=${body}`} 
+            className="btn pr-4 relative group overflow-hidden"
+            initial={{ opacity: 0}}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+        >
             <span className="relative pr-7">{t('button')}</span>
             <div aria-hidden="true" className="absolute right-8 -top-2 text-2xl transition duration-300 -translate-y-7 group-hover:translate-y-6">
                 <div className="flex items-center justify-center -rotate-45">
@@ -20,6 +27,6 @@ export const ContactButton = () => {
                     <FontAwesomeIcon icon={faArrowRight}/>
                 </div>
             </div>
-        </a>
+        </motion.a>
     )
 }        

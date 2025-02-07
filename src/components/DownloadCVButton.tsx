@@ -1,5 +1,5 @@
 'use client';
-
+import { motion } from "motion/react"
 import { useParams } from "next/navigation";
 
 export const DownloadCVButton = () => {
@@ -8,6 +8,13 @@ export const DownloadCVButton = () => {
   const cvPath = locale === "en" ? "/edvan_davi_CV_en.pdf" : "/edvan_davi_CV_pt.pdf";
       
     return (
-      <a href={cvPath} download className="btn">Download CV</a>
+      <motion.a 
+        href={cvPath} download className="btn"
+        initial={{ opacity: 0}}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
+      >
+        Download CV
+      </motion.a>
     )
 }        

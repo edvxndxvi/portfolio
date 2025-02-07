@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import { motion } from "motion/react"
 
 import jsIcon from '../../public/svg/javascriptIcon.svg';
 import reactIcon from '../../public/svg/reactIcon.svg';
@@ -27,11 +28,17 @@ export const Tecnology = () => {
     }, []);
       
     return (
-        <ul className='grid grid-cols-3 grid-rows-2 min-[550px]:grid-cols-6 min-[600px]:grid-rows-1  gap-10'>
+        <ul className='grid grid-cols-3 grid-rows-2 min-[550px]:grid-cols-6 min-[600px]:grid-rows-1 gap-10'>
             {tecnologys.map((tecnology) => (
-                <li key={tecnology.id} className={`cursor-pointer transition-all hover:saturate-100 ${isLightTheme ? 'brightness-[0.18] saturate-0 hover:brightness-100 ' : 'saturate-0 brightness-50 hover:brightness-100'}`}>
+                <motion.li 
+                    key={tecnology.id} 
+                    className={`cursor-pointer transition-all hover:saturate-100 ${isLightTheme ? 'brightness-[0.18] saturate-0 hover:brightness-100 ' : 'saturate-0 brightness-50 hover:brightness-100'}`}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5, delay: 1 }}
+                >
                     <Image src={tecnology.icon} alt={tecnology.name}/>
-                </li>
+                </motion.li>
             ))}
 
         </ul>
