@@ -35,7 +35,7 @@ export const Tecnology = () => {
                     className={`cursor-pointer transition-all hover:saturate-100 ${isLightTheme ? 'brightness-[0.18] saturate-0 hover:brightness-100 ' : 'saturate-0 brightness-50 hover:brightness-100'}`}
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5, delay: 1 }}
+                    transition={{ duration: 0.5, delay: 0.8 }}
                 >
                     <Image src={tecnology.icon} alt={tecnology.name}/>
                 </motion.li>
