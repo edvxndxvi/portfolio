@@ -51,6 +51,7 @@
     "Contact": {
         "subject": "Bora trocar uma ideia?",
         "body": "Oi, Edvan! Vi seu portfólio e fiquei com algumas ideias na cabeça. Se tiver um tempinho, bora conversar?",
-        "button": "Entrar em contato"
+        "button": "Entrar em contato",
+        "copied": "Email copiado!"
     }
 }

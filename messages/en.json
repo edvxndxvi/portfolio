@@ -51,6 +51,7 @@
     "Contact": {
         "subject": "Let's have a chat!",
         "body": "Hi, Edvan! I saw your portfolio and have a few ideas in mind. If you have some time, let's chat?",
-        "button": "Get in Touch"
+        "button": "Get in Touch",
+        "copied": "Copied to clipboard!"
     }
 }

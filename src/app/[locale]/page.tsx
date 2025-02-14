@@ -97,7 +97,7 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="pb-32 md:pb-64 px-4 grid gap-28 lg:gap-16">
+        <section id="about" className="pb-16 md:pb-64 px-4 grid gap-28 lg:gap-16">
           {/* Overview */}
           <div>
             <motion.h2 
@@ -169,7 +169,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id='contact' className="pb-5 px-4 max-w-[1440px] relative mx-auto overflow-hidden">
+        <section id='contact' className="pt-16 pb-5 px-4 max-w-[1440px] relative mx-auto overflow-hidden">
 
           {/* Spotlight Effect Elements */}
           <div className="bg-[#448FCD] spotlight-bottom h-[550px] -bottom-[400px] right-24 sm:right-80 lg:left-[550px] animate-spotlight-bottom2 animation-delay-2000" ></div>
