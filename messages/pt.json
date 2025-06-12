@@ -21,7 +21,10 @@
     "Projects": {
         "tapdano": "Como parte da equipe da Blueshift, fui designado a codar o site da TapDano a partir de um design ja criado.",
         "wattwise": "Dashboard de energia, projeto criado para a Global Solution da FIAP, no segundo semetres do primeiro ano.",
-        "bikehub": "Ecommerce fictício de uma loja de bicicletas. Sua ideia inicial se baseava na prospecção de um cliente real."
+        "bikehub": "Ecommerce fictício de uma loja de bicicletas. Sua ideia inicial se baseava na prospecção de um cliente real.",
+        "seeMore": "Ver Mais",
+        "seeLess": "Ver Menos"
+
     },
     "Experiences": {
         "blueshift": {
@@ -39,7 +42,7 @@
     },
     "Educations": {
         "meritScholarship": {
-            "title": "1º Lugar Bolsa Mérito - FIAP"
+            "title": "1º e 3º Lugar Bolsa Mérito - FIAP"
         },
         "fiap": {
             "course": "Análise e Desenvolvimento de Sistemas - FIAP"
