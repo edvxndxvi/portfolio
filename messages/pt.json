@@ -21,7 +21,7 @@
     "Projects": {
         "tapdano": "Como parte da equipe da Blueshift, fui designado a codar o site da TapDano a partir de um design ja criado.",
         "wattwise": "Dashboard de energia, projeto criado para a Global Solution da FIAP, no segundo semetres do primeiro ano.",
-        "bikehub": "Ecommerce fictício de uma loja de bicicletas. Sua ideia inicial se baseava na prospecção de um cliente real.",
+        "ratings": "Site de avaliação de jogos. Inicialmente criado como estudo, mas sendo revisitado para aprimorar conceitos de React.",
         "seeMore": "Ver Mais",
         "seeLess": "Ver Menos"
 

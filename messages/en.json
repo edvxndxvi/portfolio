@@ -21,7 +21,7 @@
     "Projects": {
         "tapdano": "As part of the Blueshift team, I was assigned to code the TapDano website based on an already created design.",
         "wattwise": "Energy Dashboard, a project created for Global Solution at FIAP, in the second semester of the first year.",
-        "bikehub": "Fictional eCommerce of a bicycle shop. Its initial concept was based on the prospecting of a real client.",
+        "ratings": "Game review website. Initially created as a study project, but now being revisited to improve React concepts.",
         "seeMore": "See More",
         "seeLess": "See Less"
     },
