@@ -1,34 +1,34 @@
-import Image from "next/image";
-import { useTranslations } from "next-intl";
-import { motion } from "motion/react";
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import { motion } from 'motion/react';
 
-import fiap from "../../public/images/fiap.jpg";
-import senac from "../../public/images/senac.jpg";
+import fiap from '../../public/images/fiap.jpg';
+import senac from '../../public/images/senac.jpg';
 
 export const Educations = () => {
-  const t = useTranslations("Educations");
+  const t = useTranslations('Educations');
 
   const educations = [
     {
       id: 1,
-      title: t("meritScholarship.title"),
-      date: "2024",
+      title: t('meritScholarship.title'),
+      date: '2024',
       organizationLogo: fiap,
-      orgName: "FIAP",
+      orgName: 'FIAP',
     },
     {
       id: 2,
-      title: t("fiap.course"),
-      date: "2024 - 12/2025",
+      title: t('fiap.course'),
+      date: '2024 - 12/2025',
       organizationLogo: fiap,
-      orgName: "FIAP",
+      orgName: 'FIAP',
     },
     {
       id: 3,
-      title: t("senac.course"),
-      date: "2022 - 2023",
+      title: t('senac.course'),
+      date: '2022 - 2023',
       organizationLogo: senac,
-      orgName: "SENAC",
+      orgName: 'SENAC',
     },
   ];
 
@@ -43,11 +43,7 @@ export const Educations = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <div>
-            <Image
-              src={education.organizationLogo}
-              alt={education.orgName}
-              className="rounded-[4px] min-w-11 max-w-11"
-            />
+            <Image src={education.organizationLogo} alt={education.orgName} className="rounded min-w-11 max-w-11" />
           </div>
           <div>
             <p className="font-medium text-lg text-text">{education.title}</p>

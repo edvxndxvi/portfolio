@@ -1,9 +1,9 @@
 "use client";
 import { motion } from "motion/react";
-import { useParams } from "next/navigation";
+import { useLocale } from "next-intl";
 
 export const DownloadCVButton = () => {
-  const { locale } = useParams();
+  const locale = useLocale();
   const cvPath =
     locale === "en" ? "/edvan_davi_CV_en.pdf" : "/edvan_davi_CV_pt.pdf";
 
